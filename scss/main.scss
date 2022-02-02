@@ -14,14 +14,14 @@ body {
 }
 
 .card {
-  width: 33rem;
+  width: 35rem;
   background-color: $darkBlueCard;
-  padding: 2.25rem;
-  border-radius: 1rem;
+  padding: 2.55rem;
+  border-radius: 1.5rem;
+
 
   &--image {
     position: relative;
-
     &:hover {
       .card--image__fg {
         cursor: pointer;
@@ -36,6 +36,7 @@ body {
         transform: translate(-50%, -50%);
         border-radius: 0.5rem;
         background-color: rgba($cyan, 0.35);
+        
       }
     }
 
@@ -69,7 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.7rem 0;
+    padding: 1.85rem 0;
     border-bottom: 2px solid $darkBlueLine;
 
     &__price {

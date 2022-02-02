@@ -99,6 +99,8 @@ body {
   background-color: #14253d;
   padding: 2.55rem;
   border-radius: 1.5rem;
+  -webkit-box-shadow: 0 2rem 0 1.2rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2rem 0 1.2rem rgba(0, 0, 0, 0.08);
 }
 
 .card--image {

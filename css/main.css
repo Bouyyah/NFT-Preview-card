@@ -47,7 +47,6 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -74,5 +73,150 @@ select {
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 33rem;
+  background-color: #14253d;
+  padding: 2.25rem;
+  border-radius: 1rem;
+}
+
+.card--image {
+  position: relative;
+}
+
+.card--image:hover .card--image__fg {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 255, 247, 0.35);
+}
+
+.card--image__bg {
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.card--image__fg {
+  display: none;
+}
+
+.card--title {
+  color: white;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+.card--title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card--text {
+  color: #8bacda;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.card--infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.7rem 0;
+  border-bottom: 2px solid #2f415b;
+}
+
+.card--infos__price {
+  text-align: center;
+  color: #00fff7;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card--infos__price img {
+  position: relative;
+  top: 0.2rem;
+}
+
+.card--infos__time {
+  color: #8bacda;
+  font-size: 1.4rem;
+}
+
+.card--infos__time img {
+  position: relative;
+  top: 0.2rem;
+}
+
+.card--avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.4rem 0 1rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card--avatar__image {
+  width: 12%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.card--avatar__desc {
+  color: #8bacda;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.card--avatar__desc span {
+  color: white;
+}
+
+.card--avatar__desc span:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
